@@ -3,12 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductModule } from './modules/product/product.module';
+import { ProductListComponent } from './components/product-list/product-list.component';
+
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+   
+  
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+
+    BrowserAnimationsModule,ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]

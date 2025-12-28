@@ -21,7 +21,7 @@ export class ProductService {
     this.productSubject.next(this.productArr);
   }
 
-  // add product
+  // add 
   addPost(product: Iproduct) {
     this.productArr.unshift(product);
     this.productSubject.next(this.productArr);

@@ -6,7 +6,7 @@
 
         <mat-card-title>{{ p.name }}</mat-card-title>
 
-        <mat-card-content class="ms-3">
+        <mat-card-content >
           {{ p.desc }} :-
           <span
             [ngStyle]="{
@@ -15,7 +15,7 @@
                 p.status === 'cancelled' ? 'red' :
                 p.status === 'delivered' ? 'green' : 'black'
             }">
-            {{ p.status | uppercase }}
+          <b> {{ p.status | uppercase }}</b> 
           </span>
         </mat-card-content>
 
